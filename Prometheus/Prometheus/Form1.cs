@@ -16,5 +16,10 @@ namespace Prometheus
         {
             InitializeComponent();
         }
+
+        private void mirror_machine_sel_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
