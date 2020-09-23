@@ -17,7 +17,7 @@ namespace Prometheus
             InitializeComponent();
             public static string[] machine_6 = new string[] { "PH0001", "PH0008", "3", "4", "5" };
             public static string[] machine_7 = new string[] { "PHT001", "PHT008", "3", "4", "5" };
-            public static string[] machine_8 = new string[] { "PAS001", "PAS008", "3", "4", "5" };
+            public static string[] machine_8 = new string[] { "PAS001", "PAS008", "31", "4", "5" };
 
 
 
