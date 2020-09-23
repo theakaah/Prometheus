@@ -96,6 +96,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // menuStrip1
             // 
@@ -106,6 +107,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(828, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // 매크로MToolStripMenuItem
             // 
@@ -132,7 +134,12 @@
             // 
             this.mirror_machine_sel.FormattingEnabled = true;
             this.mirror_machine_sel.ItemHeight = 12;
-            this.mirror_machine_sel.Location = new System.Drawing.Point(378, 153);
+            this.mirror_machine_sel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.mirror_machine_sel.Location = new System.Drawing.Point(21, 126);
             this.mirror_machine_sel.Name = "mirror_machine_sel";
             this.mirror_machine_sel.Size = new System.Drawing.Size(139, 148);
             this.mirror_machine_sel.TabIndex = 1;
