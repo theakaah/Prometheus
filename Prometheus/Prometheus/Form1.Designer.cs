@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.mirror_machine_sel = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -37,7 +39,6 @@
             this.매크로MToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mirroMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cTCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mirror_machine_sel = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -45,12 +46,36 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.mirror_machine_sel);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(12, 36);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(804, 452);
             this.panel1.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(21, 294);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(68, 96);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // mirror_machine_sel
+            // 
+            this.mirror_machine_sel.FormattingEnabled = true;
+            this.mirror_machine_sel.ItemHeight = 12;
+            this.mirror_machine_sel.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.mirror_machine_sel.Location = new System.Drawing.Point(21, 126);
+            this.mirror_machine_sel.Name = "mirror_machine_sel";
+            this.mirror_machine_sel.Size = new System.Drawing.Size(139, 148);
+            this.mirror_machine_sel.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -96,8 +121,8 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
-            //this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
-            // 
+            //this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
+            //designer.cs 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -107,7 +132,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(828, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            //this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // 매크로MToolStripMenuItem
             // 
@@ -129,21 +153,6 @@
             this.cTCToolStripMenuItem.Name = "cTCToolStripMenuItem";
             this.cTCToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.cTCToolStripMenuItem.Text = "C&T(&C)";
-            // 
-            // mirror_machine_sel
-            // 
-            this.mirror_machine_sel.FormattingEnabled = true;
-            this.mirror_machine_sel.ItemHeight = 12;
-            this.mirror_machine_sel.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
-            this.mirror_machine_sel.Location = new System.Drawing.Point(21, 126);
-            this.mirror_machine_sel.Name = "mirror_machine_sel";
-            this.mirror_machine_sel.Size = new System.Drawing.Size(139, 148);
-            this.mirror_machine_sel.TabIndex = 1;
-            //this.mirror_machine_sel.SelectedIndexChanged += new System.EventHandler(this.mirror_machine_sel_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -177,6 +186,7 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.ListBox mirror_machine_sel;
+        private System.Windows.Forms.Button button1;
     }
 }
 
